@@ -1,0 +1,4 @@
+code: ATO_HESITATION_VOICE
+family: ATO
+schema: LD-3.5
+description: "Indicates hesitation markers from prosodic measurements."

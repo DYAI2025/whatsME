@@ -1,0 +1,4 @@
+code: MEMA_WITHDRAWAL_SIGNAL
+family: MEMA
+schema: LD-3.5
+description: "Captures withdrawal or distancing language cues."
