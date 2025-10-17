@@ -1,0 +1,9 @@
+[submodule "apps/ingestion/whatsthat"]
+path = apps/ingestion/whatsthat
+url = https://github.com/markrai/whatsthat.git
+[submodule "vendor/WTME"]
+path = vendor/WTME
+url = https://github.com/DYAI2025/WTME_ALL_Marker-LD3.4.1-5.1.git
+[submodule "vendor/LeanDeep"]
+path = vendor/LeanDeep
+url = https://github.com/DYAI2025/LeanDeep_Framework_v4.0.git

@@ -1,0 +1,4 @@
+code: SEM_BOUNDARY_SETTING
+family: SEM
+schema: LD-3.5
+description: "Signals boundary setting statements in negotiations."
