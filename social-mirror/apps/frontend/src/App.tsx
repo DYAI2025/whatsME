@@ -27,14 +27,25 @@ export default function App() {
 
   async function analyze() {
     setLoading(true);
-    const r = await fetch("http://localhost:8000/analyze/text", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, lang: "de", prosody: { pause_ms: 750 } })
-    });
-    const j = await r.json();
-    setRes(j);
-    setLoading(false);
+    try {
+      const r = await fetch("http://localhost:8000/analyze/text", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, lang: "de", prosody: { pause_ms: 750 } })
+      });
+      if (!r.ok) {
+        // Optionally, you could set an error state here
+        setRes(null);
+      } else {
+        const j = await r.json();
+        setRes(j);
+      }
+    } catch (error) {
+      // Optionally, you could set an error state here
+      setRes(null);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
